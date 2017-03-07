@@ -40,6 +40,9 @@ public class Photographer {
   }
 
   public void addJournalEntry(String day, Integer photos){
-
+    this.journal.put(day, photos);
+  }
+  public Integer lastJournalPhotos(String day){
+    return journal.get(day);
   }
 }
