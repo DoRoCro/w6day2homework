@@ -38,4 +38,8 @@ public class Photographer {
     }
     return detailsList;
   }
+
+  public void addJournalEntry(String day, Integer photos){
+
+  }
 }
