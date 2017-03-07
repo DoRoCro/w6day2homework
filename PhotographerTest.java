@@ -9,13 +9,13 @@ public class PhotographerTest {
   @Test
   public void hasName(){
     photographer = new Photographer("David Bailey");
-    assertEquals("David Bailey", photographer.name);
+    assertEquals("David Bailey", photographer.getName() );
   } 
 
  // @Test
  // public void canAddCamera() {
  //   photographer.addCamera(camera);
- //   assertEquals(1, photographer.cameras.count() );
+ //   assertEquals(1, photographer.countCameras() );
  // }
 
 }

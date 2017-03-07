@@ -1,12 +1,23 @@
 import java.util.*;
 
 public class Photographer {
-  public String name; 
+  private String name; 
   private ArrayList<Camera> cameras;
 
   public Photographer ( String name) {
     this.name = name;
+    this.cameras = new ArrayList<Camera>() ;
   }
 
-  
+  public String getName(){
+    return this.name;
+  }
+
+  public void addCamera(Camera camera) {
+    cameras.add(camera);
+  }
+
+  public int countCameras() {
+    return cameras.size();
+  }
 }
