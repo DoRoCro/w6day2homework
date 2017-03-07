@@ -34,11 +34,12 @@ public class PhotographerTest {
     assertEquals(1, photographer.countCameras() );
   }
 
-  // @Test 
-  // public void canPrintDetails() {
-  //   photographer.addCamera(a_camera);
-  //   assertEquals("click!", photographer.getCamera(a_camera).printDetails() );
-  //   photographer.addCamera(d_camera);
+  @Test 
+  public void canPrintDetails() {
+    photographer.addCamera(a_camera);
+    assertEquals("click!", photographer.getCamera(a_camera).printDetails() );
+    photographer.addCamera(d_camera);
+    assertEquals("beep!", photographer.getCamera(d_camera).printDetails() );
 
-  // }
+  }
 }

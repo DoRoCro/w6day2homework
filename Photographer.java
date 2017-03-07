@@ -24,4 +24,8 @@ public class Photographer {
   public int countCameras() {
     return cameras.size();
   }
+
+  public Camera getCamera(Camera camera) {
+    return cameras.get(cameras.indexOf(camera));
+  }
 }

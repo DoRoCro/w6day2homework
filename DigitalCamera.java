@@ -1,6 +1,6 @@
 public class DigitalCamera implements Camera{
 
-  public void printDetails(){
-    
+  public String printDetails(){
+    return "beep!";
   }
 }
