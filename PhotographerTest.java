@@ -23,12 +23,12 @@ public class PhotographerTest {
     assertEquals(1, photographer.countCameras() );
   }
   
-  // @Test
-  // public void canRemoveCamera() {
-  //   photographer.addCamera(camera);
-  //   photographer.addCamera(camera);
-  //   assertEquals(2, photographer.countCameras() );
-  //   photographer.removeCamera(camera);
-  //   assertEquals(1, photographer.countCameras() );
-  // }
+  @Test
+  public void canRemoveCamera() {
+    photographer.addCamera(camera);
+    photographer.addCamera(camera);
+    assertEquals(2, photographer.countCameras() );
+    photographer.removeCamera(camera);
+    assertEquals(1, photographer.countCameras() );
+  }
 }
