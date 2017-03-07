@@ -40,6 +40,13 @@ public class PhotographerTest {
     assertEquals("click!", photographer.getCamera(a_camera).printDetails() );
     photographer.addCamera(d_camera);
     assertEquals("beep!", photographer.getCamera(d_camera).printDetails() );
+  }
+
+  @Test 
+  public void hasPrintDetails() {
+    photographer.addCamera(a_camera);
+    photographer.addCamera(d_camera);
+    assertEquals("click!beep!", photographer.printAllCameraDetails() );
 
   }
 }

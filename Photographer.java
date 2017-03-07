@@ -28,4 +28,12 @@ public class Photographer {
   public Camera getCamera(Camera camera) {
     return cameras.get(cameras.indexOf(camera));
   }
+
+  public String printAllCameraDetails() {
+    String detailsList = "";
+    for (Camera camera : cameras) {
+      detailsList = detailsList + camera.printDetails();
+    }
+    return detailsList;
+  }
 }
