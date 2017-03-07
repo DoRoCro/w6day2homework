@@ -3,10 +3,12 @@ import java.util.*;
 public class Photographer {
   private String name; 
   private ArrayList<Camera> cameras;
+  private HashMap journal;
 
   public Photographer ( String name) {
     this.name = name;
     this.cameras = new ArrayList<Camera>() ;
+    this.journal = new HashMap<String, Integer>();
   }
 
   public String getName(){
